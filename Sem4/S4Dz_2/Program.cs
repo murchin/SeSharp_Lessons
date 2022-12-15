@@ -35,7 +35,11 @@ int SumDigit()
 {
     int i = 10;
     int digit;
-    while ((Math.Abs(number) > 0))
+    if (number<0)
+    {
+        number = -number;
+    }
+    while (number > 0)
     {
         digit = ((int)number) % i;
         Sum = Sum + digit;
